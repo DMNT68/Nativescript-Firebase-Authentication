@@ -38,3 +38,8 @@
     horizontal-align: center;
     margin: 20;
 }
+
+.vertical {
+    vertical-align: center;
+    horizontal-align: center;
+}

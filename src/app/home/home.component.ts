@@ -19,7 +19,7 @@ export class HomeComponent implements OnInit {
 
     ngOnInit(): void {
         // Init your component properties here.
-        this.page.actionBarHidden=true;
+        // this.page.actionBarHidden=true;
     }
 
     logout(){

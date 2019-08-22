@@ -1,18 +1,53 @@
-<StackLayout row="1 " class="centrar">
-    <Image [src]="_auth.photo"></Image>
-    <Label text="" textWrap="true" class="hr-light m-b-20"></Label>
+<ActionBar title="Firebase Autenticación" flat="true" class="action-bar bkg">
+</ActionBar>
 
-    <Label text="Nombre:" textWrap="true" class="h3"></Label>
-    <Label [text]="_auth.nombre" textWrap="true" class="labels"></Label>
-    <Label text="" textWrap="true" class="hr-light m-b-20"></Label>
+<Tabs selectedIndex="0">
 
-    <Label text="Email:" textWrap="true" class="h3"></Label>
-    <Label [text]="_auth.email" textWrap="true" class="labels"></Label>
-    <Label text="" textWrap="true" class="hr-light m-b-20"></Label>
+    <!-- The bottom tab UI is created via TabStrip (the containier) and TabStripItem (for each tab)-->
+    <TabStrip>
+        <TabStripItem title="Inicio" class="ico icon-size" iconSource="font://&#xe88a;"></TabStripItem>
+        <TabStripItem title="Serch" class="ico icon-size" iconSource="font://&#xe8b6;"></TabStripItem>
+        <TabStripItem title="Perfil" class="ico icon-size" iconSource="font://&#xe853;"></TabStripItem>
+    </TabStrip>
 
-    <Label text="Proveedor:" textWrap="true" class="h3"></Label>
-    <Label [text]="_auth.proveedor" textWrap="true" class="labels"></Label>
-    <Label text="" textWrap="true" class="hr-light m-b-20"></Label>
+    <!-- The number of TabContentItem components should corespond to the number of TabStripItem components -->
+    <TabContentItem>
+        <GridLayout>
+            <Label text="Home Page" class="h2 text-center"></Label>
+        </GridLayout>
+    </TabContentItem>
+    <TabContentItem>
+        <GridLayout>
+            <Label text="Search Page" class="h2 text-center"></Label>
+        </GridLayout>
+    </TabContentItem>
+    <TabContentItem>
 
-    <Button text="Logout " (tap)="logout() " class="btn btn-primary btn-rounded-lg "></Button>
-</StackLayout>
+        <ScrollView>
+            <GridLayout>
+                <Label text="Account Page" class="h2 text-center"></Label>
+
+                <StackLayout row="1 " class="centrar">
+                    <Image [src]="_auth.photo"></Image>
+                    <Label text="" textWrap="true" class="hr-light m-b-20"></Label>
+
+                    <Label text="Nombre:" textWrap="true" class="h3"></Label>
+                    <Label [text]="_auth.nombre" textWrap="true" class="labels"></Label>
+                    <Label text="" textWrap="true" class="hr-light m-b-20"></Label>
+
+                    <Label text="Email:" textWrap="true" class="h3"></Label>
+                    <Label [text]="_auth.email" textWrap="true" class="labels"></Label>
+                    <Label text="" textWrap="true" class="hr-light m-b-20"></Label>
+
+                    <Label text="Proveedor:" textWrap="true" class="h3"></Label>
+                    <Label [text]="_auth.proveedor" textWrap="true" class="labels"></Label>
+                    <Label text="" textWrap="true" class="hr-light m-b-20"></Label>
+
+                    <Button text="Logout " (tap)="logout() " class="btn btn-primary btn-rounded-lg "></Button>
+                </StackLayout>
+            </GridLayout>
+        </ScrollView>
+
+    </TabContentItem>
+
+</Tabs>

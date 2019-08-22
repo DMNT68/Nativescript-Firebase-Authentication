@@ -53,7 +53,11 @@ export class AuthFirebaseService {
           this.photo = result.photoURL;
           this.proveedor = result.additionalUserInfo.providerId;
           this.router.navigate(['home'], { clearHistory: true, transition:{name:'slide'} });
-          console.log('resultado', result.additionalUserInfo.profile);
+          // let profile = new Map();
+          // profile = result.additionalUserInfo.profile;
+          // (profile:any)=>{
+          //   console.log(profile.picture);
+          // }
           this.isloading=false; 
 
         },
@@ -67,7 +71,7 @@ export class AuthFirebaseService {
 
   public logout(){
     firebase.logout().then(()=>{
-      this.router.navigate(['login'], { clearHistory: true, transition:{name:'slideleft'} });
+      this.router.navigate(['login'], { clearHistory: true, transition:{name:'slideRight'} });
     });
   }
 
