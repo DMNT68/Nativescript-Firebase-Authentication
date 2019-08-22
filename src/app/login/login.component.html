@@ -1,0 +1,17 @@
+<GridLayout rows="auto, auto" class="background form">
+
+    <Image row="0" class="img" src="https://smellyc0de.files.wordpress.com/2018/03/firebase-authentication-vert-light.png?w=401&h=301"></Image>
+
+
+    <StackLayout row="1" class="text-center">
+        <Label text="Continuar con:" class="h2 m-b-15"></Label>
+
+        <StackLayout orientation="horizontal">
+            <Button text="&#xe901;" class="ico btn btn-size btn-rounded-lg btn-facebook" (tap)="loginFacebook()"></Button>
+            <Button text="&#xe900;" class="ico btn btn-size btn-rounded-lg btn-google" (tap)="loginGoogle()"></Button>
+        </StackLayout>
+        <ActivityIndicator width="50" height="50" [busy]="_auth.isloading" class="activity-indicator"></ActivityIndicator>
+    </StackLayout>
+
+
+</GridLayout>

@@ -1,0 +1,21 @@
+.fas {
+    font-family: "Font Awesome 5 Free", "fa-solid-900";
+}
+
+.font-size {
+    font-size: 12;
+}
+
+.labels {
+    margin: 5;
+    font-size: 18;
+}
+
+Image {
+    height: 120;
+    width: 120;
+    border-radius: 100%;
+    border-color: crimson;
+    border-width: 2;
+    margin: 20;
+}

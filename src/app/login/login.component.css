@@ -1,0 +1,25 @@
+/* Add mobile styles for the component here.  */
+
+.btn-google {
+    background-color: white;
+    color: #db4a39;
+    border-radius: 100%;
+}
+
+.btn-size {
+    height: 40;
+    width: 40;
+    font-size: 24;
+}
+
+.btn-facebook {
+    background-color: white;
+    color: #0165E2;
+    border-radius: 100%;
+}
+
+StackLayout {
+    vertical-align: center;
+    horizontal-align: center;
+    width: 100%;
+}

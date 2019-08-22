@@ -1,0 +1,40 @@
+@import '~nativescript-theme-core/css/core.light.css';
+* {
+    font-family: 'Roboto', 'Roboto';
+}
+
+.fa {
+    font-family: "Font Awesome 5 Free", "fa-regular-400";
+}
+
+.fa-brands {
+    font-family: "Font Awesome 5 Brands", "fa-brands-400";
+}
+
+.fa-solid {
+    font-family: "Font Awesome 5 Free", "fa-solid-900";
+}
+
+.ico {
+    font-family: 'IcoMoon-Free';
+    font-size: 24;
+}
+
+.background {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0165e2+11,17aafe+21,f8a10f+34,ee7e0b+48,ee7e0b+55,f8c52b+67,db4a39+80 */
+    background: #0165e2;
+    /* Old browsers */
+    background: -moz-linear-gradient(45deg, #0165e2 11%, #17aafe 21%, #f8a10f 34%, #ee7e0b 48%, #ee7e0b 55%, #f8c52b 67%, #db4a39 80%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #0165e2 11%, #17aafe 21%, #f8a10f 34%, #ee7e0b 48%, #ee7e0b 55%, #f8c52b 67%, #db4a39 80%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #0165e2 11%, #17aafe 21%, #f8a10f 34%, #ee7e0b 48%, #ee7e0b 55%, #f8c52b 67%, #db4a39 80%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#0165e2', endColorstr='#db4a39', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+}
+
+.centrar {
+    horizontal-align: center;
+    margin: 20;
+}

@@ -1,0 +1,18 @@
+<StackLayout row="1 " class="centrar">
+    <Image [src]="_auth.photo"></Image>
+    <Label text="" textWrap="true" class="hr-light m-b-20"></Label>
+
+    <Label text="Nombre:" textWrap="true" class="h3"></Label>
+    <Label [text]="_auth.nombre" textWrap="true" class="labels"></Label>
+    <Label text="" textWrap="true" class="hr-light m-b-20"></Label>
+
+    <Label text="Email:" textWrap="true" class="h3"></Label>
+    <Label [text]="_auth.email" textWrap="true" class="labels"></Label>
+    <Label text="" textWrap="true" class="hr-light m-b-20"></Label>
+
+    <Label text="Proveedor:" textWrap="true" class="h3"></Label>
+    <Label [text]="_auth.proveedor" textWrap="true" class="labels"></Label>
+    <Label text="" textWrap="true" class="hr-light m-b-20"></Label>
+
+    <Button text="Logout " (tap)="logout() " class="btn btn-primary btn-rounded-lg "></Button>
+</StackLayout>
