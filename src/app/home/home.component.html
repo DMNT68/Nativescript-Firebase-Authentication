@@ -14,6 +14,9 @@
     <TabContentItem>
         <GridLayout>
             <Label text="Home Page" class="h2 text-center"></Label>
+            <StackLayout class="flashlight">
+                <Button class="btn btn-rounded-sm" text="{{ flashlightState }}" (tap)="encender()"></Button>
+            </StackLayout>
         </GridLayout>
     </TabContentItem>
     <TabContentItem>

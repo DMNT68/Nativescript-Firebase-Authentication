@@ -35,3 +35,8 @@ TabStripItem:active {
 .bkg {
     background-color: teal;
 }
+
+.flashlight {
+    vertical-align: center;
+    horizontal-align: center;
+}
